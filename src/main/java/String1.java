@@ -1,3 +1,4 @@
+
 package src.main.java;
 
 public class String1
@@ -50,8 +51,8 @@ public class String1
      * makeAbba("What", "Up") → "WhatUpUpWhat"
      */
     public String makeAbba(String a, String b) {
-        return unimplemented;
-    }
+        return a + b + b + a;
+    }   
 
     /*
      * The web is built with HTML strings like "<i>Yay</i>" which draws Yay as italic text. 
