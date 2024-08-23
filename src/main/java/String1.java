@@ -88,7 +88,8 @@ public class String1
      * extraEnd("Hi") → "HiHiHi"
      */
     public String extraEnd(String str) {
-        return str.substring(str.length()-2, str.length()) + str.substring(str.length()-2, str.length()) + str.substring(str.length()-2, str.length());
+        String lastTwo = str.substring(str.length()-2, str.length());
+        return lastTwo + lastTwo + lastTwo;
     }
 
     /*
@@ -115,7 +116,7 @@ public class String1
      * firstHalf("abcdef") → "abc"
      */
     public String firstHalf(String str) {
-        return unimplemented;
+        return str.substring(0, (str.length() + 2) / 2);
     }
 
     /*
@@ -126,7 +127,7 @@ public class String1
      * withoutEnd("coding") → "odin"
      */
     public String withoutEnd(String str) {
-        return unimplemented;
+        return str.substring(1, str.length() - 1);
     }
 
     /*
@@ -237,3 +238,4 @@ public class String1
     }
 
 }
+    
