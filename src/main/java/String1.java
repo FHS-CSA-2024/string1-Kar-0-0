@@ -116,7 +116,7 @@ public class String1
      * firstHalf("abcdef") → "abc"
      */
     public String firstHalf(String str) {
-        return str.substring(0, (str.length() + 2) / 2);
+        return str.substring(0, (str.length()/ 2));
     }
 
     /*
@@ -139,7 +139,11 @@ public class String1
      * comboString("aaa", "b") → "baaab"
      */
     public String comboString(String a, String b) {
-        return unimplemented;
+        if (a.length() < b.length()){
+            return a + b + a;
+        }else{
+            return b + a + b;
+        }
     }
 
     /*
@@ -238,4 +242,3 @@ public class String1
     }
 
 }
-    
