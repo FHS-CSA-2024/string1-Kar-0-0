@@ -154,7 +154,12 @@ public class String1
      * middleThree("solving") → "lvi"
      */
     public String middleThree(String str) {
-        return unimplemented;
+        if (str.length() <= 3){
+            return str;
+        }else{
+            int index = ((str.length() - 1) / 2) - 1;
+            return str.substring(index, index + 3);
+        }
     }
 
     /*
