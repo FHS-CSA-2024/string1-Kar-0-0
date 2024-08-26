@@ -1,5 +1,5 @@
 
-package src.main.java;
+ 
 
 public class String1
 {
@@ -170,8 +170,13 @@ public class String1
      * extraFront("H") → "HHH"
      */
     public String extraFront(String str) {
-        return unimplemented;
-    }
+        if (str.length() < 2){
+            return str + str + str;
+        }else{
+            String finalstr = str.substring(0, 2); 
+            return finalstr + finalstr + finalstr;
+        }
+    };
 
     /*
      * Given a string, return a "rotated left 2" version where the first 2 chars are moved to the end. 
