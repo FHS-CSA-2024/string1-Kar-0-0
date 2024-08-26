@@ -1,4 +1,4 @@
-package src.main.java;
+
  
 
 public class String1
@@ -186,7 +186,10 @@ public class String1
      * left2("Hi") → "Hi"
      */
     public String left2(String str) {
-        return unimplemented;
+        String right = str.substring(2, str.length());
+        String lefttwo = str.substring(0, 2);
+        
+        return right + lefttwo;
     }
 
     /*
@@ -198,7 +201,13 @@ public class String1
      * hasBad("xxbadxx") → false
      */
     public boolean hasBad(String str) {
-        return false;
+        if (str.substring(0, 3).equals("bad")){
+            return true;
+        }else if(str.substring(1, 4).equals("bad")){
+            return true;
+        }else{
+            return false;
+        }
     }
 
     /*
