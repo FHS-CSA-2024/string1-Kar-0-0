@@ -1,4 +1,4 @@
-package src.main.java; 
+ package src.main.java;
 
 public class String1
 {
@@ -243,7 +243,14 @@ public class String1
      *minCat("java", "Hello") → "javaello"
      */
     public String minCat(String a, String b) {
-        return unimplemented;
+        if (a.length() > b.length()){
+            return a.substring(a.length() - b.length(), a.length()) + b;
+        }else if (a.length() < b.length()){
+            String bNew = b.substring(b.length() - a.length(), b.length());
+            return a + bNew;
+        }else {
+            return a + b;
+        }
     }
 
     /*
@@ -254,7 +261,15 @@ public class String1
      * withoutX("Hxix") → "Hxi"
      */
     public String withoutX(String str) {
-        return unimplemented;
+        String target = "x";
+        if (str.substring(0, 1).equals(target) && str.substring(str.length()-1, str.length()).equals(target)){
+            return str.substring(1, str.length()-1);
+        }else if (str.substring(0,1).equals(target)){
+            return str.substring(1, str.length());
+        }else{
+            return str.substring(0, str.length()-1);
+        }
+        
     }
 
     /*
@@ -267,7 +282,14 @@ public class String1
      * deFront("away") → "aay"
      */
     public String deFront(String str) {    
-        return unimplemented;
-    }
+        if (str.substring(0, 2).equals("ab")){
+            return str;
+        }else if (str.substring(0, 1).equals("a")){
+            return str.substring(1, str.length());
+        }else if (str.substring(1, 2).equals("b")){
+            return str.substring(0, 1) + str.substring(2, str.length());
+        }else{
+            return str.substring(2, str.length());
+        }
 
 }
