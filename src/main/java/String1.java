@@ -1,7 +1,6 @@
- package src.main.java;
+package src.main.java;
 
-public class String1
-{
+public class String1{
     private String unimplemented = "UNIMPLEMENTED CODE";
 
     public static void main(String[] args){
@@ -22,6 +21,11 @@ public class String1
         System.out.println(s.minCat("Hello", "Hi"));
         System.out.println(s.withoutX("xHix"));
         System.out.println(s.deFront("Hello"));
+        System.out.println(s.deFront("awabridge"));
+        System.out.println(s.deFront("ible"));
+        System.out.println(s.deFront("ant"));
+        System.out.println(s.deFront("cool"));
+
     }
 
     public String1()
@@ -187,7 +191,7 @@ public class String1
     public String left2(String str) {
         String right = str.substring(2, str.length());
         String lefttwo = str.substring(0, 2);
-        
+
         return right + lefttwo;
     }
 
@@ -220,7 +224,7 @@ public class String1
     public String conCat(String a, String b) {
         String lastA = a.substring(a.length() - 1, a.length());
         String lastB = b.substring(0, 1);
-        
+
         if (a.length() < 1){
             return b;
         }else if (b.length() < 1){
@@ -269,7 +273,7 @@ public class String1
         }else{
             return str.substring(0, str.length()-1);
         }
-        
+
     }
 
     /*
@@ -285,12 +289,12 @@ public class String1
         if (str.substring(0, 2).equals("ab")){
             return str;
         }else if (str.substring(0, 1).equals("a")){
-            return str.substring(1, str.length());
-        }else if (str.substring(1, 2).equals("b")){
             return str.substring(0, 1) + str.substring(2, str.length());
+        }else if (str.substring(1, 2).equals("b")){
+            return str.substring(1, str.length());
         }else{
             return str.substring(2, str.length());
         }
 
-}
+    }
 }
