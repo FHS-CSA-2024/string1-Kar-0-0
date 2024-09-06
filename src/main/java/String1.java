@@ -222,18 +222,14 @@ public class String1{
      * conCat("abc", "") → "abc"
      */
     public String conCat(String a, String b) {
-        String lastA = a.substring(a.length() - 1, a.length());
-        String lastB = b.substring(0, 1);
-
         if (a.length() < 1){
             return b;
         }else if (b.length() < 1){
-            return a;
-        }else if (lastA.equals(lastB)){
-            return a + b.substring(1, b.length());
-        }else{
-            return a + b;
+            return a
+        }else if (str.charAt(a.length() - 1).equals(str.charAt(b.length() - 1){
+            return a.substring(0, a.lenth) + b.substring(1, b.length);
         }
+        return a + b;
     }
 
     /*
