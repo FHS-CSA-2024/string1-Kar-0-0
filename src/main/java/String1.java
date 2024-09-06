@@ -232,7 +232,7 @@ public class String1{
         }else if (lastA.equals(lastB)){
             return a + b.substring(1, b.length());
         }else{
-            return a + b + b;
+            return a + b;
         }
     }
 
