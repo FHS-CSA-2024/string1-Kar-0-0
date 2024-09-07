@@ -225,9 +225,9 @@ public class String1{
         if (a.length() < 1){
             return b;
         }else if (b.length() < 1){
-            return a
-        }else if (str.charAt(a.length() - 1).equals(str.charAt(b.length() - 1){
-            return a.substring(0, a.lenth) + b.substring(1, b.length);
+            return a;
+        }else if (Character.toString(a.charAt(a.length() - 1)).equals(Character.toString(b.charAt(0)))){
+            return a.substring(0, a.length()) + b.substring(1, b.length());
         }
         return a + b;
     }
@@ -293,5 +293,4 @@ public class String1{
         }
 
     }
-}
 }
